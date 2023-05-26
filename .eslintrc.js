@@ -14,6 +14,20 @@ module.exports = {
   // add your custom rules here
   //it is base on https://github.com/vuejs/eslint-config-vue
   rules: {
+    'indent':0,
+    'comma-dangle':0,
+    'no-trailing-spaces':0,
+    'eol-last':0,
+    "indent":["off",2],
+    "vue/html-self-closing": ["error", {
+      "html": {
+          "void": "never",
+          "normal": "any",
+          "component": "any"
+      },
+      "svg": "always",
+      "math": "always"
+    }],
     "vue/max-attributes-per-line": [2, {
       "singleline": 10,
       "multiline": {
